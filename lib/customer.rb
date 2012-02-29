@@ -13,13 +13,24 @@ class Customer
   def statement()
 
     @rentals.each do |each|
+      this_amount = 0
+      
       puts case  each.movie.price_code()
       when Movie::REGULAR
-        'Regular'
+        this_amount   +=  2
+        if (each.days_rented > 2) then
+          this_amount +=  (each.days_rented - 2) * 1.5
+        end
+        ['Regular', this_amount]
       when Movie::CHILDRENS
-        'Childrens'
+        this_amount   +=  1.5
+        if (each.days_rented > 2) then
+          this_amount +=  (each.days_rented - 3) * 1.5
+        end
+        ['Childrens', this_amount]
       when Movie::NEW_RELEASE
-        'New Release'
+        this_amount   +=  each.days_rented * 3
+        ['New Release', this_amount]
       end
     end
 
