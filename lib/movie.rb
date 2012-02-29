@@ -4,11 +4,11 @@ class Movie
   REGULAR     = 0
   NEW_RELEASE = 1
 
-  attr_accessor :price
+  attr_accessor :price_code
   attr_reader   :title
 
-  def initialize(title_string, price_code_int)
-    @title, @price_code = title, price_code_int
+  def initialize(title_string, price_code)
+    @title, @price_code = title, price_code
   end
 
 end
