@@ -12,8 +12,8 @@ class Customer
 
   def statement()
 
-    @rentals.each do |rental|
-      puts case  rental.movie.price_code()
+    @rentals.each do |each|
+      puts case  each.movie.price_code()
       when Movie::REGULAR
         'Regular'
       when Movie::CHILDRENS
