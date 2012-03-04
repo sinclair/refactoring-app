@@ -2,8 +2,10 @@
 #   - by Martin Fowler et al
 
 This is the starting program from the Refactoring book.
-The intention is to use this as the basis for working through the refactorings. The main difference is the implementation language, in this case Ruby.
+The intention is to use this as the basis for working through the refactorings. The main difference is the implementation language, which in this case is Ruby.
 
 The implementation is true to the original Java implementation. Some Ruby-isms (idioms) have been leveraged where appropriate without 'improving' on the original.
+
+Fork it! Clone it! Refactor it!
 
 /sb/
