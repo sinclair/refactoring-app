@@ -26,7 +26,7 @@ class Customer
         end
       when Movie::CHILDRENS
         this_amount   +=  1.5
-        if (each.days_rented > 2) then
+        if (each.days_rented > 3) then
           this_amount +=  (each.days_rented - 3) * 1.5
         end
       when Movie::NEW_RELEASE
